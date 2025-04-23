@@ -19,6 +19,10 @@
 \cs_new:Npn \real #1 {#1}                % 把 \real{0.30} 展开为 0.30
 \ExplSyntaxOff
 \usepackage{soul}
+\usepackage{microtype}
+
+
+\sloppy
 
 
 \lstset{
@@ -44,9 +48,10 @@
 \begin{document}
 
 \title{Predicting Olympic Success: Medal Counts, First-Time Medalists, and the Impact of Elite Coaching and Event Dynamics}
-\author{Team Control Number: 2508999}
+\author{}
 \date{}
 \maketitle
+
 
 % 把原始mypaper.tex的内容放在这里，但需要进行以下修改：
 % 1. 删除顶部的% !TeX root = mypaper.tex
@@ -85,133 +90,39 @@ This study explores the determinants of national Olympic medal
     actionable recommendations for national Olympic committees to optimize
     their strategies in athlete development, event participation, and
     coaching investment
-\begin{quote}
-    \textbf{Problem Chosen}
+
+    \newpage
+    \tableofcontents
+    \newpage
+
     
-    \textbf{C}
+    \section{Introduction}
     
-    \textbf{2025}
+    \subsection{Background}
     
-    \textbf{MCM/ICM}
-    \end{quote}
-    
-    \textbf{Summary Sheet}
-    
-    \textbf{Team Control Number}
-    
-    \begin{quote}
-    \textbf{2508999}
-    \end{quote}
-    
-    \includegraphics[width=6.22833in,height=\textheight,keepaspectratio]{./media/media/image1.jpeg}
-    
-    \begin{quote}
-    \textbf{Predicting Olympic Success:}
-    
-    \textbf{Medal Counts, First-Time Medalists, and the Impact of Elite}
-    
-    \textbf{Coaching and Event Dynamics}
-    \end{quote}
-    
-    \includegraphics[width=6.29833in,height=\textheight,keepaspectratio]{./media/media/image2.jpeg}
-    
-    \begin{quote}
-    \textbf{Abstract}
-    \end{quote}
-    
-    \textbf{}
-    
-    \begin{quote}
-    \textbf{KeyWords: Olympic Medal Performance, 2028 Projections, Great
-    Coach Effect, Strategic Recommendations}
-    
-    \textbf{Contents}
-    
-    \hyperref[bookmark24]{\textbf{1 . Introduction 2}}
-    
-    \hyperref[bookmark3-1]{\textbf{1.1 Background 2}}
-    
-    \hyperref[bookmark4-1]{\textbf{1.2 Restatement of Problems 2}}
-    
-    \hyperref[bookmark5-1]{\textbf{1.3. Overview of Our Work 3}}
-    
-    \hyperref[bookmark6-1]{\textbf{2. Data Analysis 4}}
-    \end{quote}
-    
-    \hyperref[bookmark27]{\textbf{3 Model Establishment and Solutions 6}}
-    
-    \begin{quote}
-    \hyperref[bookmark8-1]{\textbf{3.1 Forecast 2028 Los Angeles Olympic
-    Games 6}}
-    
-    \hyperref[bookmark9-1]{\textbf{3.1.1 Data preparation and cleaning 6}}
-    
-    \hyperref[bookmark28]{\textbf{3.1.2 Model Establishment 7}}
-    
-    \hyperref[bookmark11-1]{\textbf{3.1.3 Analysis and Evaluation of results
-    8}}
-    
-    \hyperref[bookmark12-1]{\textbf{3.2 First Olympic Medal Prediction Model
-    12}}
-    
-    \hyperref[bookmark13-1]{\textbf{3.2.1 Model Development and Feature
-    Engineering 12}}
-    
-    \hyperref[bookmark31]{\textbf{3.2.2 Model Training and Validation 13}}
-    
-    \hyperref[bookmark15-1]{\textbf{3.2.3 2028 Olympic Games First Medal
-    Prediction 13}}
-    
-    \hyperref[bookmark16-1]{\textbf{3.2.4 Interpretation and Analysis of
-    Prediction Results 13}}
-    
-    \hyperref[bookmark17-1]{\textbf{3.3 Event Selection and Hosting Choices
-    14}}
-    
-    \protect\phantomsection\label{bookmark18}{}\hyperref[bookmark18]{\textbf{3.4
-    Investigating Factors Influencing Medal Counts: The "Great Coach Effect"
-    17}}
-    
-    \hyperref[bookmark19-1]{\textbf{3.4.1 Difference-in-Differences Analysis
-    of Performance Breakthroughs 17}}
-    
-    \hyperref[bookmark20-1]{\textbf{3.4.2 Case Study Evidence: Lang Ping,
-    Béla Károlyi, and Bob Bowman 19}}
-    
-    \hyperref[bookmark21-1]{\textbf{3.4.3 Coach Replacement Priority
-    Analysis and Recommendations 21}}
-    
-    \hyperref[bookmark22-1]{\textbf{4 Conclusion 23}}
-    
-    \hyperref[bookmark23-1]{\textbf{5 Reference 24}}
-    
-    \protect\phantomsection\label{bookmark24}{}\textbf{1 . Introduction}
-    
-    \protect\phantomsection\label{bookmark3-1}{}\textbf{1.1 Background}
-    
-    \textbf{The Olympic Games have evolved dramatically from their ancient
+    The Olympic Games have evolved dramatically from their ancient
     origins, when participation was limited to Greek-speaking athletes i .
     Today, they stand as the world\textquotesingle s premier international
     sporting event, symbolized by the iconic five interlocking rings
     designed by Baron Pierre de Coubertin, the founder of the modern
     Olympics z . These rings, reprzesenting the five continents, perfectly
-    embody the Games\textquotesingle{} inclusive spirit and global reach.}
+    embody the Games\textquotesingle{} inclusive spirit and global reach.
     
-    \textbf{Since their modern revival in 1896, the Olympics have maintained
+    Since their modern revival in 1896, the Olympics have maintained
     a quadrennial schedule, with events spanning no more than 18 days.
     Throughout their modern history, the Games have demonstrated remarkable
     resilience, having been interrupted only during the two World Wars
     (cancelling the 1916, 1940, and 1944 events) and experiencing a single
-    postponement in 2020 due to the global pandemic.}
+    postponement in 2020 due to the global pandemic.
     
-    \textbf{Beyond their sporting significance, the Olympics serve as a
+    Beyond their sporting significance, the Olympics serve as a
     powerful catalyst for urban transformation and economic development in
     host cities ii. This legacy extends far beyond the competition itself,
     often resulting in improved infrastructure, increased tourism, and
-    lasting socioeconomic benefits for the host nation iii.}
-    \end{quote}
+    lasting socioeconomic benefits for the host nation iii.
+        
     
-    \textbf{The 2024 Paris Olympics will showcase 329 gold medal events
+    The 2024 Paris Olympics will showcase 329 gold medal events
     across 32 sports iv, with each precious medal containing six grams of
     pure gold and weighing 524 grams in total v. As the Games approach,
     global attention has increasingly focused on the medal count
@@ -219,115 +130,101 @@ This study explores the determinants of national Olympic medal
     countries already speculating about their nations\textquotesingle{}
     potential performance. This phenomenon reflects how Olympic medals have
     become not just symbols of athletic excellence, but also a measure of
-    national pride and sporting prowess on the world stage.}
+    national pride and sporting prowess on the world stage.
     
-    \begin{quote}
-    \protect\phantomsection\label{bookmark4-1}{}\textbf{1.2 Restatement of
-    Problems}
+    \subsection{Restatement of Problems}
     
-    \textbf{The aim of this study is to develop advanced, data-driven
+    The aim of this study is to develop advanced, data-driven
     predictive models to accurately forecast medal standings for the 2028
     Los Angeles Summer Olympic Games. Utilizing historical data on past
     medal counts, host nations, and event distributions, the study seeks to
-    address the following critical challenges:}
+    address the following critical challenges:
     
     \textbf{1. Medal Count Prediction:}
     
-    \textbf{Construct predictive models for forecasting the number of gold
+    Construct predictive models for forecasting the number of gold
     medals and overall medal counts for each National Olympic Committee
     (NOC) participating in the 2028 Games. The models will incorporate
     uncertainty estimates and evaluate their predictive accuracy using
     robust performance metrics, such as Mean Squared Error (MSE), Mean
-    Absolute Error}
-    
-    \textbf{(MAE), and the coefficient of determination (R²). These metrics
+    Absolute Error(MAE), and the coefficient of determination (R²). These metrics
     will ensure rigorous validation of the models\textquotesingle{}
-    reliability and precision.}
+    reliability and precision.
     
-    \textbf{1. Medal Ranking Forecasting:}
-    \end{quote}
+    \textbf{2. Medal Ranking Forecasting:}
     
-    \textbf{Based on the predictive outputs, estimate the final medal
+    Based on the predictive outputs, estimate the final medal
     rankings for each country in the 2028 Olympics, including prediction
     intervals to account for uncertainty. Additionally, identify nations
     likely to exhibit notable improvements or declines in their rankings
     relative to their performance in the 2024 Paris Summer Olympics,
     offering a nuanced understanding of potential shifts in global
-    competitiveness.}
+    competitiveness.
     
-    \begin{quote}
-    \textbf{2. First-Time Medalists Analysis:}
     
-    \textbf{Extend the predictive framework to include countries that have
+    \textbf{3. First-Time Medalists Analysis:}
+    
+    Extend the predictive framework to include countries that have
     yet to win an Olympic medal. Forecast the number of nations likely to
     secure their first-ever medal at the 2028 Games and estimate the
     probabilities associated with these groundbreaking achievements. This
     analysis will provide insights into the broader inclusivity of the
-    Olympic movement.}
+    Olympic movement.
     
-    \textbf{3. Event-Specific Dynamics:}
-    \end{quote}
+    \textbf{4. Event-Specific Dynamics:}
     
-    \textbf{Analyze the relationship between the number and types of Olympic
+    Analyze the relationship between the number and types of Olympic
     events and the medal performance of competing nations. Identify the most
     critical sports that contribute to the success of different countries
     and assess the influence of event selection by the host nation on
     overall medal outcomes. This aspect will shed light on strategic
-    prioritization for both host and non-host countries.}
+    prioritization for both host and non-host countries.
     
-    \begin{quote}
-    \textbf{4. Impact of Coaching Transitions (``Coach Effect''):}
-    \end{quote}
     
-    \textbf{Investigate the potential influence of high-profile coaches
+    \textbf{5. Impact of Coaching Transitions (``Coach Effect''):}
+    
+    Investigate the potential influence of high-profile coaches
     switching national teams on medal performance. Quantify the contribution
     of this ``coach effect'' and recommend specific sports and countries
     where employing elite coaches could substantially enhance medal
     prospects. This analysis will provide actionable guidance for leveraging
-    coaching expertise to maximize competitive advantage.}
+    coaching expertise to maximize competitive advantage.
     
-    \begin{quote}
-    \protect\phantomsection\label{bookmark5-1}{}\textbf{1.3. Overview of Our
-    Work}
-    \end{quote}
+    \subsection{Overview of Our Work}
     
-    \textbf{This study develops a robust framework to predict Olympic medal
+    This study develops a robust framework to predict Olympic medal
     counts and identify potential first-time medalist nations for the 2028
-    Los Angeles Summer Olympics. Key steps include:}
+    Los Angeles Summer Olympics. Key steps include:
     
-    \begin{quote}
-    \textbf{Data Cleaning and Integration: Merged datasets from 2000
+    \textbf{Data Cleaning and Integration:} Merged datasets from 2000
     onwards, focusing on medal tables, host country data, event details, and
-    athlete performances to ensure reliability and relevance.}
+    athlete performances to ensure reliability and relevance.
     
-    \textbf{Feature Engineering: Counted total gold, silver, bronze, and
-    overall medals for each country since 2000.}
+    \textbf{Feature Engineering:} Counted total gold, silver, bronze, and
+    overall medals for each country since 2000.
     
-    \textbf{Medal Count Prediction: Applied multivariate regression for
+    \textbf{Medal Count Prediction:} Applied multivariate regression for
     consistent participants, weighted models for irregular participants, and
-    direct methods for countries with minimal data.}
-    \end{quote}
+    direct methods for countries with minimal data.
     
-    \textbf{First-Time Medalist Prediction: Used Random Forest models with
+    \textbf{First-Time Medalist Prediction:} Used Random Forest models with
     SMOTE to predict probabilities of countries achieving their first
-    Olympic medals, with confidence intervals to ensure precision.}
+    Olympic medals, with confidence intervals to ensure precision.
     
-    \begin{quote}
-    \textbf{Impact of Great Coaches: Conducted Difference-in-Differences
+    \textbf{Impact of Great Coaches:} Conducted Difference-in-Differences
     (DID) analysis to quantify the effect of elite coaching on national
-    medal counts, isolating it from other factors.}
+    medal counts, isolating it from other factors.
     
-    \protect\phantomsection\label{bookmark6-1}{}\textbf{2. Data Analysis}
-    \end{quote}
+    \subsection{Data Analysis}
     
-    \textbf{An analysis of Olympic excellence across nearly two and a half
+    An analysis of Olympic excellence across nearly two and a half
     decades reveals fascinating patterns in the distribution of medals among
     leading sporting nations. The dataset, spanning from 2000 to 2024,
     offers a compelling narrative of international athletic achievement and
     national sporting prowess, illuminating the intricate dynamics of global
-    sporting competition.}
+    sporting competition.
     
-    \textbf{The perennial fascination with Olympic powerhouses draws our
+    The perennial fascination with Olympic powerhouses draws our
     attention to an elite circle of nations that have consistently dominated
     the medal tables. Through meticulous analysis of historical data, we can
     identify these Olympic titans who have maintained their reign at the
@@ -335,38 +232,40 @@ This study explores the determinants of national Olympic medal
     United States and followed closely by sporting giants like China and UK,
     have established themselves as the true emperors of the Olympic arena,
     consistently commanding the upper echelons of the medal standings with
-    remarkable persistence.}
+    remarkable persistence.
     
-    \includegraphics[width=6.42in,height=3.655in]{./media/media/image3.jpeg}
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=\textwidth]{./media/media/image3.jpeg}
+        \caption{\textbf{Top 10 Countries}}
+        \label{fig:top10countries}
+    \end{figure}
     
-    \begin{quote}
-    \textbf{2-1 Top 10 Contries}
-    \end{quote}
     
-    \textbf{A closer examination of the United States\textquotesingle{}
+    A closer examination of the United States\textquotesingle{}
     performance reveals a remarkably balanced medal distribution, with
     consistently high gold medal counts year after year and an impressively
     proportional distribution across gold, silver, and bronze. This stands
     in stark contrast to their closest competitor, China, whose singular
-    focus on gold medals reflects a controversial}
+    focus on gold medals reflects a controversial
     
-    \begin{quote}
-    \textbf{approach to Olympic success. The Chinese strategy, which often
+    
+    approach to Olympic success. The Chinese strategy, which often
     diminishes the achievements of non-gold medalists, appears to be driven
     by a nationalistic desire to surpass the US gold medal count, feeding
     into a carefully cultivated narrative of national superiority. Yet,
     despite this intense focus on gold medals and the immense pressure
     placed on their athletes, they consistently fall short of overtaking the
-    United States\textquotesingle{} overall Olympic dominance.}
-    \end{quote}
+    United States\textquotesingle{} overall Olympic dominance.
     
-    \includegraphics[width=6.05167in,height=3.45in]{./media/media/image4.png}
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=\textwidth]{./media/media/image4.png}
+        \caption{\textbf{US Medal Distribution}}
+        \label{fig:usmedaldistribution}
+    \end{figure}
     
-    \begin{quote}
-    \textbf{2-2 US Medal Distribution}
-    \end{quote}
-    
-    \textbf{Within our comprehensive analysis, we\textquotesingle ve
+    Within our comprehensive analysis, we\textquotesingle ve
     uncovered a fascinating phenomenon of medal consistency among certain
     nations. While some countries maintain their stable positions through
     sheer sporting supremacy and robust athletic infrastructure, others
@@ -375,69 +274,49 @@ This study explores the determinants of national Olympic medal
     the top tier or in more modest positions, presents an engaging paradox
     in Olympic performance patterns, warranting deeper investigation into
     the underlying factors that contribute to such sustained achievement
-    levels.}
+    levels.
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=\textwidth]{./media/media/image5.jpeg}
+        \caption{\textbf{Olympic Ranking Stability Analysis (2000-2024)}}
+        \label{fig:olymprankingstability}
+    \end{figure}
     
-    \begin{quote}
-    \textbf{Countries}
+ 
+    \section{Model Establishment and Solutions}
     
-    \textbf{standard}
+    \subsection{Forecast 2028 Los Angeles Olympic Games}
     
-    \textbf{darker color}
+    \subsubsection{Data Preparation and Cleaning}
     
-    \textbf{ranking}
-    
-    \textbf{2-3 Olympic Ranking Stability Analysis (2000-2024)}
-    \end{quote}
-    
-    \includegraphics[width=4.52167in,height=3.0421in]{./media/media/image5.jpeg}
-    
-    \begin{quote}
-    \textbf{sorted by}
-    
-    \textbf{deviation,}
-    \end{quote}
-    
-    \textbf{indicates higher}
-    
-    \begin{quote}
-    \protect\phantomsection\label{bookmark27}{}\textbf{3 Model Establishment
-    and Solutions}
-    
-    \protect\phantomsection\label{bookmark8-1}{}\textbf{3.1 Forecast 2028
-    Los Angeles Olympic Games}
-    
-    \protect\phantomsection\label{bookmark9-1}{}\textbf{3.1.1 Data
-    preparation and cleaning}
-    
-    \textbf{We used the data in "summerOly\_athletes.csv" and "" in this
+    We used the data in "summerOly\_athletes.csv" and "" in this
     process, considering the time cycle of the Olympic Games, many athletes
-    retired after participating in the two Olympic}
-    \end{quote}
+    retired after participating in the two Olympic
     
-    \textbf{Games. In addition, the performance level of each country in the
+    
+    Games. In addition, the performance level of each country in the
     Olympic Games is related to the comprehensive national strength of the
     country. In addition, the competition system of the pre-2000 Olympic
     Games is also quite different from the present, so we discard all the
-    data before 2000 and only intercept the data after 2000 for use.}
+    data before 2000 and only intercept the data after 2000 for use.
     
-    \begin{quote}
-    \textbf{Because of the different events of each Olympic Games, the
+    Because of the different events of each Olympic Games, the
     different events will have a huge impact on the medal. It is very
     important to ensure that the events we predict are present at the 2028
     Olympic Games. We used the latest available 2028 Los Angeles Games
     sports list (available on the official website) as a condition to
-    exclude those sports that do not exist at the 2028 Games.}
+    exclude those sports that do not exist at the 2028 Games.
     
-    \textbf{In order to make better use of our time series model, we extend
+    In order to make better use of our time series model, we extend
     it with existing data. We created the historical medal count, starting
     from 2000, adding up gold, silver, bronze, and total medal count as our
     complementary feature. At the same time, to simplify the model, we
     combine the same rows for Sport, and de-duplicate the gold medal
     statistics for team events (because in the athlete table, a team event
     will award a gold medal to each person, but this should only be counted
-    once when calculating the national gold medal count).}
+    once when calculating the national gold medal count).
     
-    \textbf{To categorize events as team-based, we first compiled a list of
+    To categorize events as team-based, we first compiled a list of
     sports inherently involving teams, such as Basketball, Football, and
     Volleyball. Additionally, we identified specific keywords commonly
     associated with team events, including "Team," "Doubles," "Pair,"
@@ -446,15 +325,15 @@ This study explores the determinants of national Olympic medal
     predefined team sports or contained any of the team-related keywords.
     This combined approach ensures a comprehensive and accurate
     identification of team events, facilitating more precise analysis and
-    modeling in our study.}
-    \end{quote}
+    modeling in our study.
+
     
-    \textbf{As there is no overall information yet on the countries
+    As there is no overall information yet on the countries
     participating in the 2028 Olympics, we can only extrapolate using what
     we knowvi. We excluded countries whose last Olympic participation was
     less than 2012. Because these countries are not likely to participate in
     the 2028 Olympic Games, and there is a lack of reference data, we will
-    not consider these countries}
+    not consider these countries
     
     \begin{quote}
     \protect\phantomsection\label{bookmark28}{}\textbf{3.1.2 Model

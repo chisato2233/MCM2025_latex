@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Background}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Restatement of Problems}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Overview of Our Work}{4}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Data Analysis}{5}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Model Establishment and Solutions}{7}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Forecast 2028 Los Angeles Olympic Games}{7}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Data Preparation and Cleaning}{7}{subsubsection.2.1.1}%
