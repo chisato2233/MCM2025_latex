@@ -1,0 +1,59 @@
+# LaTeX 相关文件
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.pdfsync
+*.dvi
+*.ps
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.bcf
+*.run.xml
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+*.slg
+*.slo
+*.sls
+
+# 编辑器临时文件
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# 编译输出目录
+_output/
+build/
+*.pdf
+
+# 图片缓存
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.eps
+*.psd
+
+# 其他
+*.bak
+*.backup
+*.tmp
+
